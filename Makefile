@@ -6,17 +6,17 @@
 #    By: kofujita <kofujita@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/07/17 20:29:24 by kofujita          #+#    #+#              #
-#    Updated: 2024/09/07 11:47:44 by kofujita         ###   ########.fr        #
+#    Updated: 2024/09/16 15:21:25 by kofujita         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME        := ft_std.a
+NAME        := libftstd.a
 INCLUDE_DIR := 
-CFLAGS      := -Wall -Wextra -Werror
+CFLAGS      := -Wall -Wextra -Werror -g3
 
-SRCS		:= ./srcs/atoi.c
-			   ./srcs/find.c
-			   ./srcs/length.c
+SRCS		:= ./srcs/atoi.c \
+			   ./srcs/find.c \
+			   ./srcs/length.c \
 			   ./srcs/next_no_whitespace.c
 
 OBJS_DIR	:= objs
@@ -69,5 +69,7 @@ fclean : clean
 re : fclean all
 
 install : all
+	@$(MKDIR) $(INSTALL_DIR)/lib
+	@$(MKDIR) $(INSTALL_DIR)/include
 	@$(CP) $(NAME) $(INSTALL_DIR)/lib
-	@$(CP) t_string.h $(INSTALL_DIR)/include
+	@$(CP) ft_std.h $(INSTALL_DIR)/include
