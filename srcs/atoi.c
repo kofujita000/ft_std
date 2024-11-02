@@ -6,7 +6,7 @@
 /*   By: kofujita <kofujita@student42.tokyo>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/07 09:01:13 by kofujita          #+#    #+#             */
-/*   Updated: 2024/11/02 09:17:36 by kofujita         ###   ########.fr       */
+/*   Updated: 2024/11/02 09:38:03 by kofujita         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ int	ft_std_atoi(
 	(void)(!sign_flag && (sign_flag = 1));
 	while (begin != end && !ret)
 	{
-		ret = (*begin < 0x30 && 0x39 < *begin);
+		ret = (*begin < 0x30 || 0x39 < *begin);
 		(void)(!ret && \
 		(ret = __builtin_smul_overflow(*response, \
 				10, response)));
