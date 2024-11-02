@@ -6,14 +6,14 @@
 /*   By: kofujita <kofujita@student42.tokyo>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/07 09:01:13 by kofujita          #+#    #+#             */
-/*   Updated: 2024/09/16 15:35:18 by kofujita         ###   ########.fr       */
+/*   Updated: 2024/11/02 09:17:36 by kofujita         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../ft_std.h"
 #include <stdio.h>
 
-int			ft_std_atoi(
+int	ft_std_atoi(
 				const char *begin,
 				const char *end,
 				int *const response)
