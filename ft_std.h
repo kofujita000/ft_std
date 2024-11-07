@@ -6,7 +6,7 @@
 /*   By: kofujita <kofujita@student42.tokyo>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/05 18:35:33 by kofujita          #+#    #+#             */
-/*   Updated: 2024/09/07 09:33:33 by kofujita         ###   ########.fr       */
+/*   Updated: 2024/11/07 20:43:29 by kofujita         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,5 +62,17 @@ int			ft_std_atoi(
  */
 const char	*ft_std_next_no_whitespace(
 				const char *const survey);
+
+/**
+ * Function to set variable data for memory(addr)
+ *
+ * 1. void *const         -> addr
+ * 2. const unsigned char -> byte information
+ * 3. size_t              -> memory byte size
+ */
+void		ft_std_memset(
+				void *const addr,
+				const unsigned char byte,
+				size_t size);
 
 #endif // FT_STD_H

@@ -6,7 +6,7 @@
 #    By: kofujita <kofujita@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/07/17 20:29:24 by kofujita          #+#    #+#              #
-#    Updated: 2024/09/16 15:21:25 by kofujita         ###   ########.fr        #
+#    Updated: 2024/11/07 20:43:45 by kofujita         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -17,7 +17,8 @@ CFLAGS      := -Wall -Wextra -Werror -g3
 SRCS		:= ./srcs/atoi.c \
 			   ./srcs/find.c \
 			   ./srcs/length.c \
-			   ./srcs/next_no_whitespace.c
+			   ./srcs/next_no_whitespace.c \
+			   ./srcs/memset.c
 
 OBJS_DIR	:= objs
 OBJS		:= $(SRCS:%.c=$(OBJS_DIR)/%.o)
